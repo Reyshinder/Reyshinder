@@ -29,12 +29,12 @@ class App{
 		this.scene = new THREE.Scene();
         this.scene.add( this.dolly );
         
-		const ambient = new THREE.HemisphereLight(0xFF0000, 0xAAAAAA, 0.8);
+		const ambient = new THREE.HemisphereLight(0xFFFF00, 0xAAAAAA, 0.8);
 		this.scene.add(ambient);
 
         this.cube = new THREE.Mesh(
             new THREE.BoxBufferGeometry(1,1,1),
-            new THREE.MeshLambertMaterial({color:'blue'})
+            new THREE.MeshLambertMaterial({color:'red'})
         );
         this.cube.position.set(0, 1.5, 3);
         this.scene.add(this.cube);
